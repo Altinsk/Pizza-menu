@@ -1,11 +1,16 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client";
 
 function App() {
-  return <h1>Hello React!!!!</h1>;
+  return (
+    <>
+      <h1>Hello React!!!!</h1>
+      <p>this is an example</p>
+    </>
+  );
 }
 
-const root = ReactDom.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   // React.StrictMode renders the components twice to check for bugs and checks for outdated components in the React version
