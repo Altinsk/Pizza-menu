@@ -70,6 +70,22 @@ function Header() {
     </header>
   );
 }
+
+function Menu() {
+  const pizzas = [];
+  const numPizzas = pizzas.length;
+
+  console.log(numPizzas);
+  return (
+    <main className="menu">
+      <h2>Our Menu</h2>
+      {numPizzas > 0 && (
+        <ul className="pizzas">
+          {pizzas.map((pizza) => (
+            <Pizza pizzaObject={pizza} key={pizza.name} />
+          ))}
+        </ul>
+      )}
       {/* <Pizza
         photoName="pizzas/spinaci.jpg"
         name="Pizza Spinaci"
