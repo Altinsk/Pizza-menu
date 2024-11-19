@@ -66,7 +66,6 @@ function Header() {
 }
 
 function Menu() {
-  // const pizzas = [];
   const pizzas = pizzaData;
   const numPizzas = pizzas.length;
 
@@ -102,7 +101,6 @@ function Pizza({ pizzaObject }) {
         ) : (
           <span>{pizzaObject.price}€</span>
         )}
-        {/* <span>{pizzaObject.soldOut ? "Soldout" : pizzaObject.price}€</span> */}
       </div>
     </li>
   );
@@ -125,7 +123,6 @@ function Footer() {
       )}
     </footer>
   );
-  // React.createElement("footer", null, "We are currently open!");
 }
 
 function Order({ closeHour, openHour }) {
@@ -143,7 +140,6 @@ function Order({ closeHour, openHour }) {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  // React.StrictMode renders the components twice to check for bugs and checks for outdated components in the React version
   <React.StrictMode>
     <App />
   </React.StrictMode>
